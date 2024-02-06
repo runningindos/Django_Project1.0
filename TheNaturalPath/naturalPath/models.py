@@ -2,20 +2,20 @@ from django.db import models
 
 # Create your models here.
 class Providers(models.Model):
-    prid = models.NumberField(primary_key=True)
+    prid = models.IntegerField(primary_key=True)
     created_at = models.DateTimeField(auto_now_add=True)
     first_name = models.CharField(max_length=50)
     last_name = models.CharField(max_length=100)
     email = models.CharField(max_length=200)
     
 class Users(models.Model):
-    uid = models.NumberField(primary_key=True)
+    uid = models.IntegerField(primary_key=True)
     created_at = models.DateTimeField(auto_now_add=True)
     first_name = models.CharField(max_length=50)
     last_name = models.CharField(max_length=100)
 
 class Practice(models.Model):
-    pracid = models.NumberField(primary_key=True)
+    pracid = models.IntegerField(primary_key=True)
     created_at = models.DateTimeField(auto_now_add=True)
     prac_phone = models.CharField(max_length=200)
     prac_email = models.CharField(max_length=200)
