@@ -4,11 +4,7 @@ from .models import Providers, Users, Practice
 
 # Create your views here.
 
-def home(request, context):
-
-    context={
-        "Providers" : Providers.objects.all()
-    }
+def home(request, ):
     return render(request, 'home.html')
 
     
