@@ -1,0 +1,10 @@
+{% extends "base.html" %} {% block title %} Home {% endblock %}
+{% block content %}
+<h1>Meet Our Providers</h1>
+
+<body>
+    {% for Providers in providers %}
+    <h3>{{ Providers.first_name }} {{ Providers.last_name }}</h3>
+    {% endfor %}
+</body>
+{% endblock %}
