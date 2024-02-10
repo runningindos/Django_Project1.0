@@ -2,7 +2,12 @@
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
-
+from bs4 import BeautifulSoup
+import requests
+web_data = requests.get('https://www.the-natural-path.com/wp-admin')
+soup = BeautifulSoup(web_data.content, 'html.parser')
+news_info = soup.find_all('div', {'class': 'entry-content'})
+print(news_info.text)
 
 def main():
     """Run administrative tasks."""
