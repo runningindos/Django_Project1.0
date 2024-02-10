@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Noto+Serif+Display:ital,wght@0,100;1,100&family=Work+Sans:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Noto+Serif+Display:ital,wght@0,100;1,100&family=Work+Sans:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Noto+Serif+Display:ital,wght@0,100;1,100&family=Work+Sans:wght@200&display=swap');
+
+
+
+/*
+font-family: 'Italiana', sans-serif;
+
+font-family: 'Noto Serif Display', serif;
+
+font-family: 'Work Sans', sans-serif;*/
+
+/*colours 
+medium blue 
+    #22489E 
+light blue 
+    #BDCDEA
+greyish-brown 
+    #D6CDC5
+light grey 
+    #EFEEE1 
+*/
+
+
+
+
+/*GENERAL STYLING*/
+
+body {
+    width: 80%;
+    background-color: #EFEEE1;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    transition: fontsize .5s linear;
+    color: #EFEEE1;
+}
+
+a:hover {
+    font-size: 24px;
+    transition: all .5s linear;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1 {
+    font-family: 'Noto Serif Display', serif;
+    font-size: 3rem;
+    text-align: center;
+    color: #22489E;
+    letter-spacing: .15em;
+}
+
+h2 {
+    font-family: 'Noto Serif Display', serif;
+    letter-spacing: .1em;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid #22489E;
+    margin-bottom: 20px;
+    outline: none;
+    background-color: #EFEEE1;
+}
+
+button {
+    width: 20%;
+    height: 45px;
+    border: none;
+}
+
+/*NAVIGATION BAR    NAVIGATION BAR  NAVIGATION BAR  NAVIGATION BAR*/
+
+nav {
+    background-color: #22489E;
+    color: #EFEEE1;
+    font-family: 'Noto Serif Display', serif;        
+    font-size: 20px;
+    font-weight: 200;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: .2em;
+}
+
+.navContainer {
+    display: flex;
+}
+
+.navbar-header {
+    border-right: 2px solid #EFEEE1;
+    padding: 0px;
+    width: 25%;
+    margin: auto;
+}
+
+.navButtons{
+    width: 75%;
+}
+
+.navLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+/*FOOTER    FOOTER  FOOTER  FOOTER  FOOTER  FOOTER  FOOTER*/
+footer {
+    display: flex;
+    background-color: #22489E;
+    color: #EFEEE1;
+    font-family: 'Noto Serif Display', serif;        
+    font-size: 20px;
+    font-weight: 200;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+
+.footerContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footerSocialUl {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.footerItem {
+    padding: 10px;
+}
+
+.footerContact {
+    padding: 10px;
+}
+
+/*HOME PAGE HOME PAGE   HOME PAGE   HOME PAGE   HOME PAGE*/
+
+.choices {
+    display: flex;
+    text-align-last: center;
+    margin-bottom: 20px;
+}
+
+.about {
+    text-align: center;
+    border-right: 1px solid #22489E;
+    width: 50%;
+}
+
+.ndDef {
+    text-align: center;
+    border-left: 1px solid #22489E;
+    width: 50%;
+}
+
+.aboutPara, .defPara {
+    text-align: justify;    
+    padding: 10px 20px 0 20px;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 1.5em;
+    font-size: 1.2em;
+}
+
+/*REGISTER PAGE   REGISTER PAGE   REGISTER PAGE   REGISTER PAGE*/
+
+.formContainer {
+    display: block;
+    margin: 50px 0;
+    justify-content: center;
+}
+
+.registerForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    line-height: 30px;
+    width: 60%;
+    margin: auto;
+}
+
+.registerForm input {
+    height: 50px;
+    font-size: 1.2em;
+    text-align: center;
+    color: #22489E;
+}
+
+.registerForm input[type=text] {
+    color: #22489E;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 100;
+    font-size: 1.5em;
+    letter-spacing: .4em;
+}
+
+.registerForm label {
+    font-size: 1.2em;
+    color: #22489E;
+    font-family: 'Work Sans', sans-serif;
+    letter-spacing: .2em;
+}
+
+.registerBtn {
+    background-color: #22489E;
+    color: #EFEEE1;
+    font-family: 'Noto Serif Display', serif;        
+    font-size: 20px;
+    font-weight: 200;
+    font-weight: bold;
+    text-align: center;
+    width: 25%;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 10px;
+    height: 50px;
+}
+
+/*SUCCESS    SUCCESS     SUCCESS    SUCCESS     SUCCESS     SUCCESS*/
+.successHeader {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+/*PROVIDERS PAGE    PROVIDERS PAGE      PROVIDERS PAGE      PROVIDERS PAGE*/
+
+.providersContainer{
+    height: 100vh;
+}
+
+/*MEDIA QUERIES     MEDIA QUERIES      MEDIA QUERIES    MEDIA QUERIES*/
+
+@media (max-width: 799px) {
+    body {
+      width: 100%;
+      background-color: #D6CDC5;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    nav {
+        background-color: #22489E;
+        color: #EFEEE1;
+        font-family: 'Noto Serif Display', serif;        
+        font-size: 20px;
+        font-weight: 200;
+        font-weight: bold;
+        text-align: center;
+        letter-spacing: .05em;
+    }
+    
+    .navContainer {
+        display: flex;
+    }
+    
+    .navbar-header {
+        border-right: 2px solid #EFEEE1;
+        padding: 0px;
+        width: 40%;
+        margin: auto;
+    }
+    
+    .navButtons{
+        width: 60%;
+    }
+    
+    .navLinks {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        line-height: 30px;
+    }
+
+    .navlinks:hover {
+        background-color: #D6CDC5;
+    }
+
+    .footerSocialUl {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    
+    .choices {
+        display: flex;
+        flex-direction: column;
+        text-align-last: center;
+        margin-bottom: 20px;
+    }
+    
+    .about {
+        text-align: center;
+        border-bottom: 1px solid #22489E;
+        border-right: none;
+        width: 100%;
+    }
+    
+    .ndDef {
+        text-align: center;
+        border-top: 1px solid #22489E;
+        border-left: none;
+        width: 100%;
+    }
+
+    .registerForm input {
+        height: 50px;
+        font-size: 1.2em;
+        text-align: center;
+        color: #22489E;
+        background-color: #D6CDC5;
+    }
+    
+    .registerForm input[type=text] {
+        color: #22489E;
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 100;
+        font-size: 1em;
+        letter-spacing: .1em;
+    }
+
+    .registerBtn {
+        background-color: #22489E;
+        color: #EFEEE1;
+        font-family: 'Noto Serif Display', serif;        
+        font-size: 20px;
+        font-weight: 200;
+        font-weight: bold;
+        text-align: center;
+        width: 130px;
+        margin: auto;
+        margin-top: 50px;
+        border-radius: 10px;
+        height: 50px;
+    }
+}

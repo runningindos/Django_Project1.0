@@ -1,4 +1,26 @@
 {% extends "base.html" %} {% block title %} Home {% endblock %}
 {% block content %}
-<h1>Get registered to share your practice</h1>
+<div class="registerHeader">
+    <h1>Get registered to share your practice</h1>
+</div>
+
+<div class="formContainer">
+    <form class="registerForm" action="register/" method="post">
+        
+        <input type="text" id="firstName" name="firstName" required>
+        <label for="firstName">first name</label>
+        
+        <input type="text" id="lastName" name="lastName" required>
+        <label for="lastName">last name</label>
+        
+        <input type="email" id="email" name="email" required>
+        <label for="email">email address</label>
+
+        <input type="password" id="password" name="password" required>
+        <label for="email">password</label>
+
+        <button type="submit" class="registerBtn">Submit</button>
+
+    </form>
+</div>
 {% endblock %}

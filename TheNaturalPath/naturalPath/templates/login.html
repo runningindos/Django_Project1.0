@@ -1,4 +1,20 @@
 {% extends "base.html" %} {% block title %} Home {% endblock %}
 {% block content %}
-<h1>Login to manage your practice</h1>
+<div class="registerHeader">
+    <h1>Login to manage your practice</h1>
+</div>
+
+<div class="formContainer">
+    <form class="registerForm" action="register/" method="post">
+        
+        <input type="email" id="email" name="email" required>
+        <label for="email">email address</label>
+
+        <input type="password" id="password" name="password" required>
+        <label for="email">password</label>
+
+        <button type="submit" class="registerBtn">Submit</button>
+
+    </form>
+</div>
 {% endblock %}
