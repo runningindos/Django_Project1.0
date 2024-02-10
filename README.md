@@ -1,4 +1,6 @@
 # Django_Project1.0
+URL for site on render: https://the-natural-path.onrender.com
+
 My Django project for UCD for naturopathic doctors to post their practices for users to find them.
 
 Project Brief: 
